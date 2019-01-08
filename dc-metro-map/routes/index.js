@@ -35,7 +35,7 @@ function wmataJsonToGeoJson(jsonData) {
   var dataOut = { type: "FeatureCollection", features: [] };
   var markerSym = "bus";
   var markerColor = "#000000";
-  if (BEERME == 'true') { markerSym = "beer"; }
+  if (BEERME == 'false') { markerSym = "beer"; }
 
   if (jsonData.BusPositions) {
     jsonData.BusPositions.forEach(function(item, index) {
